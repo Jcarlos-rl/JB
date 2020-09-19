@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=Open+Sans:wght@400;700&family=Parisienne&display=swap');
+
+:root{
+    --primary: #5C4113;
+    --secondary: #dec101;
+    --gray: #717280;
+
+    --title: 'Cuprum', sans-serif;
+    --body: 'Opens Sans', sans-serif;
+}
+
+body{
+    font-family: var(--body);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100vh;
+    background-image: url('../images/back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header .text-center img{
+    margin-top: 120px;
+    width: 80%;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: var(--primary) !important;
+    font-family: var(--title);
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    border-bottom: solid 2.5px var(--secondary);
+}
+
+.content .line-left, .product-content .line-left{
+    border-left: solid 5px var(--primary);
+    height: 45px;
+}
+
+.content h2, h1, .product-content h2, footer h3{
+    color: var(--primary);
+    font-family: var(--title);
+    font-weight: 700;
+}
+
+.content p, .product-content p{
+    text-align: justify;
+    color: var(--gray);
+}
+
+.btn-action{
+    border: solid 1px var(--primary);
+    border-radius: 0px;
+    color: var(--primary);
+    padding: 10px 30px;
+}
+
+.btn-action:hover{
+    color: white;
+    background-color: var(--primary);
+}
+
+.hr-center{
+    border: solid 2.5px var(--secondary);
+    background-color: var(--secondary);
+    width: 40px;
+}
+
+footer{
+    margin: 120px 0px;
+}
+
+footer p{
+    margin-bottom: 0;
+    color: var(--gray);
+}
+
+footer a{
+    text-decoration: none !important;
+}
+
+footer p.phone a{
+    font-size: 20px;
+    color: var(--primary);
+    font-weight: 300;
+}
+
+footer p.email{
+    font-weight: 400;
+    color: var(--primary);
+    text-decoration: underline var(--secondary);
+}
+
+footer p.copy{
+    font-weight: 200;
+}
+
+footer p.pages{
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+footer p.social{
+    margin-bottom: 10px;
+    color: var(--primary);
+    border-bottom: 2px solid var(--secondary);
+    width: 90px;
+}
+@media only screen and (min-width: 600px) {
+    header .text-center img{
+        margin-top: 70px;
+        width: 400px;
+    }
+
+    .navbar{
+        padding: 2rem 1rem;
+    }
+
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 20px;
+    }
+
+    .navbar-light .navbar-nav .nav-item{
+        margin-left: 20px;
+    }
+
+    .content .col-sm-6{
+        padding-top: 150px;
+    }
+
+    .product-content{
+        margin-top: 60px;
+    }
+
+    footer p.pages{
+        margin-bottom: 30px;
+    }
+
+    footer p.social{
+        margin-bottom: 30px;
+    }
+}
